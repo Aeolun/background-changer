@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <configSections>
+        <sectionGroup name="userSettings" type="System.Configuration.UserSettingsGroup, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" >
+            <section name="BackgroundQuote.Properties.Settings" type="System.Configuration.ClientSettingsSection, System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" allowExeDefinition="MachineToLocalUser" requirePermission="false" />
+        </sectionGroup>
+    </configSections>
+    <startup> 
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+    <userSettings>
+        <BackgroundQuote.Properties.Settings>
+            <setting name="BackgroundKeywords" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="BackgroundDelay" serializeAs="String">
+                <value>600</value>
+            </setting>
+            <setting name="LocalImageDirectory" serializeAs="String">
+                <value />
+            </setting>
+            <setting name="LocalImagesEnabled" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="RunOnStartup" serializeAs="String">
+                <value>False</value>
+            </setting>
+            <setting name="QuoteUrl" serializeAs="String">
+                <value>https://api.forismatic.com/api/1.0/?method=getQuote&amp;format=json&amp;lang=en</value>
+            </setting>
+            <setting name="ImageUrl" serializeAs="String">
+                <value>https://source.unsplash.com/random/1920x1080</value>
+            </setting>
+        </BackgroundQuote.Properties.Settings>
+    </userSettings>
+</configuration>

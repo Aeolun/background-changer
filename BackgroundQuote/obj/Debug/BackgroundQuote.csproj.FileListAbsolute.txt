@@ -1,0 +1,16 @@
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\BackgroundQuote.exe.config
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\BackgroundQuote.exe
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\BackgroundQuote.pdb
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.csprojResolveAssemblyReference.cache
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.ConfigForm.resources
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.Properties.Resources.resources
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.csproj.GenerateResource.Cache
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.exe
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.pdb
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\Newtonsoft.Json.dll
+c:\users\bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\ImageProcessor.dll
+C:\Users\Bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\BackgroundQuote.exe.manifest
+C:\Users\Bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\bin\Debug\BackgroundQuote.application
+C:\Users\Bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.exe.manifest
+C:\Users\Bart\documents\visual studio 2017\Projects\BackgroundQuote\BackgroundQuote\obj\Debug\BackgroundQuote.application
