@@ -15,7 +15,7 @@ func main() {
 	win := NewMainWindow(a, cfg)
 
 	// Create updater
-	updater := NewUpdater(cfg)
+	updater := NewUpdater(cfg, a)
 	win.SetUpdater(updater)
 
 	// Start background updater

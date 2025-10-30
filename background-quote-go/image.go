@@ -6,7 +6,6 @@ import (
 	"image/color"
 	"image/draw"
 	"image/jpeg"
-	"io"
 	"math"
 	"math/rand"
 	"net/http"
@@ -18,12 +17,19 @@ import (
 	"github.com/golang/freetype/truetype"
 	"github.com/nfnt/resize"
 	"golang.org/x/image/font/gofont/goregular"
+	"golang.org/x/image/math/fixed"
 )
 
-const (
+var (
 	TargetWidth  = 1920
 	TargetHeight = 1080
 )
+
+// SetTargetDimensions updates the target dimensions for wallpapers
+func SetTargetDimensions(width, height int) {
+	TargetWidth = width
+	TargetHeight = height
+}
 
 // DownloadImage fetches an image from URL
 func DownloadImage(url string) (image.Image, error) {
@@ -181,7 +187,7 @@ func drawRect(img *image.RGBA, x, y, width, height int, col color.Color) {
 }
 
 // drawWrappedText draws text with word wrapping
-func drawWrappedText(c *freetype.Context, text string, pt freetype.Point, maxWidth int, lineHeight int) error {
+func drawWrappedText(c *freetype.Context, text string, pt fixed.Point26_6, maxWidth int, lineHeight int) error {
 	words := strings.Fields(text)
 	currentLine := ""
 	y := pt.Y
@@ -197,11 +203,11 @@ func drawWrappedText(c *freetype.Context, text string, pt freetype.Point, maxWid
 		if len(testLine) > 67 {
 			// Draw current line
 			if currentLine != "" {
-				_, err := c.DrawString(currentLine, freetype.Pt(pt.X.Round(), y.Round()))
+				_, err := c.DrawString(currentLine, fixed.Point26_6{X: pt.X, Y: y})
 				if err != nil {
 					return err
 				}
-				y += c.PointToFixed(float64(lineHeight))
+				y += fixed.I(lineHeight)
 			}
 			currentLine = word
 		} else {
@@ -211,7 +217,7 @@ func drawWrappedText(c *freetype.Context, text string, pt freetype.Point, maxWid
 
 	// Draw remaining line
 	if currentLine != "" {
-		_, err := c.DrawString(currentLine, freetype.Pt(pt.X.Round(), y.Round()))
+		_, err := c.DrawString(currentLine, fixed.Point26_6{X: pt.X, Y: y})
 		if err != nil {
 			return err
 		}

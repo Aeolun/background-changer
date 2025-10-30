@@ -6,7 +6,7 @@ import (
 
 const (
 	DefaultQuoteURL  = "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en"
-	DefaultImageURL  = "https://source.unsplash.com/random/1920x1080"
+	DefaultImageURL  = "https://picsum.photos/1920/1080"
 	DefaultDelay     = 600 // seconds
 )
 
